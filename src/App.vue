@@ -3,14 +3,16 @@
     <div>A completely un-styled demo.</div>
     <br/>
     <a href="./assets/csv-sample.csv" download>Download Sample CSV</a>
-    <br/>
+    <br/><br/>
     <vue-csv-import v-model="mappedCsv" :fields="fields">
         <vue-csv-toggle-headers></vue-csv-toggle-headers>
         <vue-csv-errors></vue-csv-errors>
         <vue-csv-input></vue-csv-input>
         <vue-csv-map></vue-csv-map>
     </vue-csv-import>
-    <pre>{{ mappedCsv }}</pre>
+    <div>
+        <pre>{{ mappedCsv }}</pre>
+    </div>
 </template>
 
 <script>
