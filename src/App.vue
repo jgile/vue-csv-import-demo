@@ -2,7 +2,7 @@
     <img alt="Vue logo" src="./assets/logo.png"/>
     <div>A completely un-styled demo.</div>
     <br/>
-    <a href="./assets/csv-sample.csv" download>Download Sample CSV</a>
+    <a href="./assets/csv-sample.csv">Download Sample CSV</a>
     <br/><br/>
     <vue-csv-import v-model="mappedCsv" :fields="fields">
         <vue-csv-toggle-headers></vue-csv-toggle-headers>
