@@ -1,17 +1,3 @@
 {
-    "headers": [
-        {
-            "source": "/assets/csv-sample.csv",
-            "headers": [
-                {
-                    "key": "Content-Type",
-                    "value": "application/csv"
-                },
-                {
-                    "key": "Content-Disposition",
-                    "value": "attachment; filename=sample.csv"
-                }
-            ]
-        }
-    ]
+
 }
