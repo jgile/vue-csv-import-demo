@@ -1,33 +1,24 @@
 <template>
   <img alt="Vue logo" src="./assets/logo.png" />
-  <div>
-    <a href="assets/csv-sample.csv">Sample CSV</a>
-  </div>
-  <div>
-    <vue-csv-import v-model="mappedCsv" :fields="fields">
-      <div>
-        <vue-csv-toggle-headers></vue-csv-toggle-headers>
-      </div>
-      <div>
-        <vue-csv-errors></vue-csv-errors>
-      </div>
-      <div>
-        <vue-csv-input></vue-csv-input>
-      </div>
-      <div>
-        <vue-csv-map></vue-csv-map>
-      </div>
-    </vue-csv-import>
-  </div>
+  <div>A completely un-styled demo.</div>
+  <br />
+  <a href="./assets/csv-sample.csv">Download Sample CSV</a>
+  <br /><br />
+  <vue-csv-import v-model="mappedCsv" :fields="fields">
+    <vue-csv-toggle-headers></vue-csv-toggle-headers>
+    <vue-csv-errors></vue-csv-errors>
+    <vue-csv-input></vue-csv-input>
+    <vue-csv-map></vue-csv-map>
+  </vue-csv-import>
+  <pre>{{ mappedCsv }}</pre>
 </template>
 
 <script>
-import HelloWorldVue from "./components/HelloWorld.vue";
 export default {
   name: "App",
   data() {
     return {
-      mappedCsv: [],
+      mappedCsv: null,
       fields: {
         name: { required: false, label: "Name" },
         age: { required: true, label: "Age" },
