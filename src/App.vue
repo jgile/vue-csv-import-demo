@@ -10,6 +10,7 @@
         <vue-csv-input></vue-csv-input>
         <vue-csv-map></vue-csv-map>
     </vue-csv-import>
+    <br/><br/>
     <div>
         <pre>{{ mappedCsv }}</pre>
     </div>

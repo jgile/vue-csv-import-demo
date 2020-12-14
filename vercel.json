@@ -5,11 +5,11 @@
             "headers": [
                 {
                     "key": "Content-Type",
-                    "value": "application/octet-stream"
+                    "value": "text/csv"
                 },
                 {
                     "key": "Content-Disposition",
-                    "value": "attachment; filename=csv-sample.csv"
+                    "value": "attachment; filename=\"csv-sample.csv\""
                 }
             ]
         }
